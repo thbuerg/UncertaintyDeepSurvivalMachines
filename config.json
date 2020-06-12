@@ -1,0 +1,134 @@
+{
+  "-out_directory": {
+    "short": "-od",
+    "value": "/data/analysis/ag-reils/buergelt/ukbb/results/networks/UDSM",
+    "help": "Output directory.",
+    "type": "str"
+  },
+  "-input": {
+    "short": "-i",
+    "value": "",
+    "help": "Input file or directory, if multiple files are expected comma-separation is assumed.",
+    "type": "str"
+  },
+  "-logging_name": {
+    "short": "-n",
+    "value": "test",
+    "help": "Global logger prefix.",
+    "type": "str"
+  },
+  "-networkname": {
+    "short": "-nn",
+    "value": "DSM_LN_autograd_debug_8",
+    "help": "Some juicy Network name.",
+    "type": "str"
+  },
+  "-device": {
+    "short": "-dv",
+    "value": "cpu",
+    "help": "Device to work on",
+    "type": "str"
+  },
+  "-learningrate": {
+    "short": "-lr",
+    "value": 1e-3,
+    "help": "The models learningrate",
+    "type": "float"
+  },
+  "-maxepochs": {
+    "short": "-me",
+    "value": 50,
+    "help": "Maximum nr of epochs to train the model",
+    "type": "int"
+  },
+  "-checkpointinterval": {
+    "short": "-cp",
+    "value": 50,
+    "help": "Write checkpoint after {-cp}-steps",
+    "type": "int"
+  },
+  "-reportinterval": {
+    "short": "-rp",
+    "value": 10,
+    "help": "Report after {reprotinterval}-steps",
+    "type": "int"
+  },
+  "-batchsize": {
+    "short": "-bs",
+    "value": 64,
+    "help": "The models batchsize",
+    "type": "int"
+  },
+  "-outputdim": {
+    "short": "-opd",
+    "value": 64,
+    "help": "The output dimension of the ftextractor",
+    "type": "int"
+  },
+  "-inputdim": {
+    "short": "-ipd",
+    "value": 9,
+    "help": "The input dimension of the ftextractor (e.g. the number of fts)",
+    "type": "int"
+  },
+  "-zdim": {
+    "short": "-zd",
+    "value": 128,
+    "help": "The latent dimension of the bottleneck.",
+    "type": "int"
+  },
+  "-kdim": {
+    "short": "-kd",
+    "value": 8,
+    "help": "The number of distributions to consider in the mixture",
+    "type": "int"
+  },
+  "-distribution": {
+    "short": "-dis",
+    "value": "lognormal",
+    "help": "Distribution to paramterize in the mixture. Has to be either `lognormal` or `weibull`",
+    "type": "str"
+  },
+  "-dropout": {
+    "short": "-do",
+    "value": 0.5,
+    "help": "Dropout to apply",
+    "type": "float"
+  },
+  "-alpha": {
+    "short": "-aa",
+    "value": 0.1,
+    "help": "Parameter alpha (float)",
+    "type": "float"
+  },
+  "-beta": {
+    "short": "-bb",
+    "value": 0.0,
+    "help": "Parameter beta (float)",
+    "type": "float"
+  },
+  "-gamma": {
+    "short": "-gg",
+    "value": 0.00001,
+    "help": "Parameter gamma (float)",
+    "type": "float"
+  },
+  "-delta": {
+    "short": "-dd",
+    "value": 0.5,
+    "help": "Parameter delta (float)",
+    "type": "float"
+  },
+  "-epsilon": {
+    "short": "-ee",
+    "value": 0.0,
+    "help": "Parameter epsilon (float)",
+    "type": "float"
+  },
+  "-iota": {
+    "short": "-ii",
+    "value": 0.0,
+    "help": "Parameter  (float)",
+    "type": "float"
+  }
+}
